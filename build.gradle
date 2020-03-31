@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.junit.jupiter:junit-jupiter:5.6.1')
+    compile('com.mashape.unirest:unirest-java:1.4.9')
+    testCompile 'io.rest-assured:rest-assured:3.1.0'
+}
